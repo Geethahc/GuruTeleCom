@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="10">
+
+<groups>
+
+<run>
+<include name="Smoke"></include>
+</run>
+</groups>
+<listeners> 
+<listener class-name="com.gurutelecom.utility.ListenerClass"></listener>
+</listeners>
+
+
+<test name="SmokeTest" thread-count= "1" >
+<parameter name="browser" value="Chrome"></parameter>
+
+<classes>
+<class name="com.gurutelecom.testcases.HomePageTest"></class>
+<!-- <class name="com.gurutelecom.testcases.AddCustomerPageTest"></class>-->
+</classes>
+</test>
+
+</suite>
