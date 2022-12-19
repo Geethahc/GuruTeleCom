@@ -44,7 +44,7 @@ public class HomePageTest extends BaseClass  {
         String str = prop.getProperty("xxx");
 		String result = objHomePage.getHomePageTitle();
 		Assert.assertEquals(result, "Guru99 Telecom1");
-		Log.endTestCase(""+browserName+"Browser :verifyTitle  completted ");
+		Log.endTestCase(""+browserName+"Browser :verifyTitle  completed ");
 
 
 	}
